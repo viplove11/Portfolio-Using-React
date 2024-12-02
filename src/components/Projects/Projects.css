@@ -1,0 +1,106 @@
+.project {
+    background-color: rgb(251, 250, 250);
+    padding: 100px 20px;
+  }
+  
+  .project p {
+    font-size: 2vw; /* Responsive font size */
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .feature-project {
+    display: grid; /* Use grid display */
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+    gap: 30px; /* Space between grid items */
+    padding: 20px; /* Adjusted padding for better spacing */
+  }
+  
+  .feature-project img {
+    height: 350px; /* Fixed height for images */
+    width: 100%; /* Make image take full width of the grid cell */
+    border-radius: 10px; /* Rounded corners */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .feature-project img:hover {
+    transform: scale(1.05); /* Slightly scale the image on hover */
+  }
+  
+  /* Overlay styles */
+  .project-item {
+    position: relative; /* Position relative for the overlay */
+    overflow: hidden; /* Hide overflow */
+  }
+  
+  .project-item:hover {
+    animation: moveUpDown 2s linear infinite;
+  }
+  
+  .overlay {
+    position: absolute; /* Position overlay on top of the image */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0; /* Initially hidden */
+    border-radius: 10px;
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+  }
+  
+  .project-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+  }
+  
+  .overlay h3 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjust title size */
+  }
+  
+  .overlay a {
+    color: white;
+    text-decoration: underline;
+    margin-top: 10px; /* Space between title and link */
+  }
+  
+  /* Updated icon-tooltip styles */
+  .icon-tooltip {
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
+    /* border: 1px solid white;  */
+    padding: 5px; 
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    /* border-radius: 5px;  */
+    transition: background-color 0.3s; 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .icon {
+    font-size: 1.3rem; /* Increase the size of the icons (adjust as needed) */
+    color: white; /* Optional: Set the icon color */
+    transition: transform 0.3s; /* Optional: Add a transition for hover effect */
+  }
+  
+  .icon:hover {
+    transform: scale(1.5); /* Optional: Slightly scale the icon on hover */
+  }
+  #github:hover{
+    color: rgb(147, 203, 63);
+  }
+  #linkedin:hover{
+    color: rgb(15, 151, 219);
+  }
+  #link:hover{
+    color: rgb(233, 157, 34);
+  }
