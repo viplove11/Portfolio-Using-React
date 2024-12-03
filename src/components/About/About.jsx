@@ -3,7 +3,7 @@ import "./About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <div className="about-content">
         <div className="about-image">
           <img src="src\assets\image1.png" alt="" />
@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-text">
           <div className="text">
             <p className="actual-heading">About Me</p>
-            <p className="acutual-text">
+            <p className="actual-text">
               A passionate Computer Engineering graduate with a strong
               foundation in software development and AI-driven solutions. I
               specialize in crafting innovative tools for real-time analysis,

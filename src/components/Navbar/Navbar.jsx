@@ -17,44 +17,44 @@ export const Navbar = () => {
       </div>
       <div className="navbar-links">
         <a
-          className={menu === "Home" ? 'active' : ""}
+          className={menu === "Home" ? "active" : ""}
           onClick={() => handleMenuClick("Home")}
-          href="#"
+          href="#home"
         >
           Home
         </a>
         <a
-          className={menu === "Projects" ? 'active' : ""}
+          className={menu === "Projects" ? "active" : ""}
           onClick={() => handleMenuClick("Projects")}
-          href="#"
+          href="#projects"
         >
           Projects
         </a>
         <a
-          className={menu === "About" ? 'active' : ""}
+          className={menu === "About" ? "active" : ""}
           onClick={() => handleMenuClick("About")}
-          href="#"
+          href="#about"
         >
           About
         </a>
         <a
-          className={menu === "Services" ? 'active' : ""}
+          className={menu === "Services" ? "active" : ""}
           onClick={() => handleMenuClick("Services")}
-          href="#"
+          href="#services"
         >
           Services
         </a>
         <a
-          className={menu === "Contact" ? 'active' : ""}
+          className={menu === "Contact" ? "active" : ""}
           onClick={() => handleMenuClick("Contact")}
-          href="#"
+          href="#contact"
         >
           Contact
         </a>
         <a
-          className={menu === "Hire me" ? 'active' : ""}
+          className={menu === "Hire me" ? "active" : ""}
           onClick={() => handleMenuClick("Hire me")}
-          href="#"
+          href="#hire"
         >
           Hire Me
         </a>

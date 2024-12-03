@@ -1,40 +1,89 @@
-.navbar-div{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
+.navbar-div {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
+
 .navbar-logo {
-    /* border: 1px solid black;    */
-    width: 50%;
+  width: 50%;
 }
-.navbar-logo p{
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-    font-size: 2vw;
-    margin-left: 10%;
+
+.navbar-logo p {
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  font-size: 2vw;
+  margin-left: 10%;
 }
-.navbar-logo span{
-    color: orange;
+
+.navbar-logo span {
+  color: orange;
 }
-.navbar-links{
-    /* border: 1px solid black;    */
-    width: 50%;
+
+.navbar-links {
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.navbar-links a {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(96, 94, 93);
+}
+
+.active {
+  padding: 2px 9px;
+  background-color: black;
+  color: white !important;
+  border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-div {
+    text-align: left;
+    box-sizing: border-box;
     padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
+  }
+
+  .navbar-logo {
+    width: fit-content;
+    text-align: center;
+  }
+
+  .navbar-logo p {
+    margin-left: 0;
+    font-size: 5vw;
+  }
+
+  .navbar-links {
+    display: none;
+  }
 }
-.navbar-links a{
-    /* color: black; */
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    color: rgb(96, 94, 93);
-}
-.active{
-    /* border: 1px solid black; */
-    padding: 2px 9px;
-    background-color: black;
-    color: white!important;
-    border-radius: 5px;
+
+@media (max-width: 480px) {
+  .navbar-div {
+    text-align: left;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+  }
+  .navbar-logo p {
+    font-size: 6vw;
+  }
+  .navbar-links {
+    display: none;
+  }
+  .navbar-links a {
+    font-size: 14px;
+    padding: 8px;
+  }
 }

@@ -1,15 +1,14 @@
 .home {
   height: 92vh;
-  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding: 0px 30px;
+  width: 100%;
 }
 .home-content,
 .home-image {
-  /* border: 1px solid red; */
   width: 50%;
 }
 .home-content p {
@@ -17,8 +16,8 @@
   font-weight: 700;
   background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* For Safari */
-  color: transparent; /* For other browsers */
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .home-content span {
   color: grey;
@@ -32,7 +31,7 @@
 }
 
 .home-image img {
-  animation: moveUpDown 2s ease-in-out infinite; /* Adjust duration and timing as needed */
+  animation: moveUpDown 2s ease-in-out infinite;
 }
 .view-cv {
   display: flex;
@@ -57,8 +56,77 @@
   color: black !important;
 }
 .download:hover {
-  background: black;
+  background: black !important;
   color: white !important;
-  border: none;
-  transition: 0.2s ease-in;
+  border: none !important;
+  transition: 0.2s ease-in !important;
+}
+
+@media (max-width: 768px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+  }
+  .home-content {
+    padding: 10px;
+    margin: 0;
+    margin-top: 100px;
+    width: 100%;
+  }
+  .home-content p {
+    font-size: 7vw;
+    text-align: left;
+  }
+  .home-content span {
+    text-align: center;
+  }
+  .home-content .view-cv {
+    display: flex;
+    justify-content: space-around;
+  }
+  .home-content .view-cv a {
+    padding: 5px;
+    border-radius: 0;
+  }
+  .home-image {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    height: auto;
+  }
+  .home-content {
+    padding: 10px;
+    margin: 0;
+    margin-top: 100px;
+    width: 100%;
+  }
+  .home-content p {
+    font-size: 7vw;
+    text-align: left;
+  }
+  .home-content span {
+    text-align: center;
+  }
+  .home-content .view-cv {
+    display: flex;
+    justify-content: space-around;
+  }
+  .home-content .view-cv a {
+    padding: 6px;
+    border-radius: 2px;
+  }
+  .home-image {
+    margin: 0;
+    padding: 0;
+    display: none;
+  }
 }
