@@ -9,14 +9,14 @@ const Projects = () => {
   const projects = [
     {
       title: "Tasty Bite's",
-      imgSrc: "src/assets/tasty bites.jpg",
+      imgSrc: "/tasty bites.jpg",
       githubLink: "https://github.com/viplove11/Tasty-Bites-Using-MERN.git",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
       projectLink: "https://tasty-biites.netlify.app/",
     },
     {
       title: "GreenSense AI",
-      imgSrc: "src/assets/Greensense.jpg",
+      imgSrc: "/Greensense.jpg",
       githubLink:
         "https://github.com/viplove11/GreenSenseAI-Revolutionize-Plant-Care.git",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
@@ -25,7 +25,7 @@ const Projects = () => {
     },
     {
       title: "Traffic Sense AI",
-      imgSrc: "src/assets/trafficcSense.jpg",
+      imgSrc: "/trafficcSense.jpg",
       githubLink:
         "https://github.com/viplove11/Traffic-Sense-AI-Smarter-Cities-Seamless-Routes.git",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
@@ -34,7 +34,7 @@ const Projects = () => {
     },
     {
       title: "VIP Fortune Banking Application",
-      imgSrc: "src/assets/bank application.png",
+      imgSrc: "/bank application.png",
       githubLink:
         "https://github.com/viplove11/Online-Banking-Application-using-Java.git",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
@@ -43,21 +43,21 @@ const Projects = () => {
     },
     {
       title: "Gemini 2.0",
-      imgSrc: "src/assets/gemini.jpg",
+      imgSrc: "/gemini.jpg",
       githubLink: "https://github.com/viplove11/Gemini-Clone.git",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
       projectLink: "https://cwv-gemini.netlify.app",
     },
     {
       title: "Home Automation Using IoT",
-      imgSrc: "src/assets/home automation interface.png",
+      imgSrc: "/home automation interface.png",
       githubLink: "https://github.com/viplove11",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
       projectLink: "https://github.com/viplove11",
     },
     {
       title: "Expense Ease",
-      imgSrc: "src/assets/expense tracking application interface.png",
+      imgSrc: "/expense tracking application interface.png",
       githubLink:
         "https://github.com/viplove11/Expense-Trcaker-Using-React.git",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
@@ -65,7 +65,7 @@ const Projects = () => {
     },
     {
       title: "'Curious for More? Explore My GitHub!'",
-      imgSrc: "src/assets/version.png",
+      imgSrc: "/version.png",
       githubLink: "https://github.com/viplove11/",
       linkedInLink: "www.linkedin.com/in/viploveparsai",
       projectLink: "https://github.com/viplove11/",
